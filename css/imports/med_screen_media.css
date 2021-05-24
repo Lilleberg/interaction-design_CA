@@ -1,0 +1,65 @@
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+
+  /*header / nav*/
+  footer .logo-copyright, .sign-up, nav, .filters_line {
+    display: none;
+  }
+
+  nav {
+    padding: 0px;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: block;
+  }
+
+  .navbar {
+    padding: 0px;
+  }
+
+  .navbar ul, .navbar li {
+    margin: 0px;
+  }
+
+  .navbar ul {
+    display: grid;
+    justify-content: left;
+    background-color: #eeedec;
+    padding: 5px 20px;
+    border: 2px solid;
+    border-color: #1de9b6;
+    position: absolute;
+    left: 40px;
+  }
+
+  .navbar li {
+    font-size: 1em;
+    padding: 5px;
+  }
+
+  .fa-bars {
+    display: block;
+    margin: 5px 0px 5px 40px;
+  }
+
+  .log-in, .cart-icon, .profile-icon {
+    font-size: 0.8em;
+  }
+
+  header .logo {
+    max-width: 110px;
+  }
+
+  .top-header {
+    margin: 0px 40px;
+  }
+
+  /*footer*/
+  .footer-content {
+    margin: 10px 20px;
+  }
+
+  .information {
+    justify-self: center;
+  }
+}

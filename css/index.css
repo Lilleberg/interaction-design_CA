@@ -1,0 +1,218 @@
+/*
+Colours:
+Black text: #040b17
+Background grey: #293238
+Dark blue: #11204a
+Green: #1de9b6
+Grey-ish: #DDDDDD
+White-ish; text: #eeedec
+*/
+
+@import "imports/typography.css";
+@import "imports/desktop_global.css";
+
+/*
+  -- BIG GRID --
+*/
+header {
+  grid-area: header;
+  background: #DDDDDD;
+}
+
+nav {
+  grid-area: nav;
+  background: #eeedec;
+}
+
+main {
+  grid-area: main;
+  background: #293238
+}
+
+footer {
+  grid-area: footer;
+  background: #DDDDDD;
+}
+
+body {
+  display: grid;
+  grid-template-areas:
+  'header'
+  'nav'
+  'main'
+  'footer';
+  margin: 0px;
+}
+
+/*
+  -- SEARCH BAR --
+*/
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0px;
+}
+
+.search-icon {
+  color: #eeedec;
+  margin-left: 15px;
+}
+
+.search-bar {
+  width: 300px;
+  height: 35px;
+  border: none;
+  border-radius: 40px;
+  padding-left: 5px;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+/*
+  -- MAIN CONTENT --
+*/
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 0.8fr 1fr;
+  justify-items: center;
+  gap: 70px;
+  margin: 50px;
+}
+
+.new-releases, .used-games {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 0.1fr repeat(2, 1fr);
+  gap: 15px;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.news {
+  display: grid;
+  grid-template-rows: 0.1fr repeat(2, 1fr);
+  gap: 15px;
+  margin: 20px 0px;
+  text-align: center;
+}
+
+h1, h2 {
+  grid-column: 1 / -1;
+  margin: 0px;
+  border-bottom: 3px solid;
+  padding-bottom: 5px;
+}
+
+.img-cod {
+  margin-bottom: 5px;
+}
+
+.sub-content {
+  display: inline-block;
+}
+
+.sub-content p, h3 {
+  margin: 5px 0px;
+}
+
+.sub-content {
+  font-weight: bold;
+}
+
+.sub-content a {
+  color: #eeedec;
+  font-size: 1.2em;
+ }
+
+ .add-to-cart {
+   max-width: 108.133px;
+ }
+
+/*
+  -- MEDIUM/LARGE SCREEN --
+*/
+@media only screen and (min-width: 901px) and (max-width: 1300px) {
+
+  .top-header, .main-content, .footer-content {
+    margin: 0px 40px;
+  }
+
+  .main-content {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .new-releases, .used-games {
+    grid-template: 1fr / repeat(4, 1fr);
+    gap: 15px;
+  }
+
+  .news {
+    grid-template: 1fr / repeat(2, 1fr);
+    margin: 0px 3em;;
+    column-gap: 70px;
+    max-width: 800px;
+  }
+
+  .information {
+    justify-self: center;
+  }
+
+  .footer-content {
+    margin-top: 10px;
+  }
+}
+
+/*
+  -- MEDIUM SCREEN --
+*/
+@media only screen and (min-width: 501px) and (max-width: 900px) {
+  .main-content {
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+  }
+
+  .new-releases, .used-games {
+    grid-template-rows: 2fr;
+    gap: 30px;
+  }
+
+  .news {
+    grid-template: 1fr / repeat(2, 1fr);
+    margin: 0px 3em;
+    column-gap: 70px;
+  }
+}
+
+/*
+  -- SMALL SCREEN --
+*/
+@media only screen and (max-width: 500px) {
+ 
+  .new-releases .game:nth-child(2),
+  .new-releases .game:nth-child(3),
+  .used-games .game:nth-child(3),
+  .used-games .game:nth-child(4) {
+    display: none;
+  }
+
+  .main-content {
+    grid-template: 3fr / 1fr;
+    row-gap: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .new-releases, .used-games {
+    grid-template: auto repeat(2, 1fr) / 1fr;
+  }
+
+  .news {
+    display: none;
+  }
+
+  
+}

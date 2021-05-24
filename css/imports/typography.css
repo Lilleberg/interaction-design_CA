@@ -1,0 +1,24 @@
+body {
+  font-family: "Montserrat", "verdana", sans-serif;
+  color: #eeedec;
+}
+
+a, header, footer {
+  text-decoration: none;
+  color:#040b17;
+}
+
+.button {
+  color: #040b17;
+  text-transform: uppercase;
+  font-family: "Nunito Sans", "Montserrat", sans-serif;
+}
+
+.active {
+  font-weight: 600;
+}
+
+.search-bar {
+  font-size: 1.2em;
+  font-style: italic;
+}

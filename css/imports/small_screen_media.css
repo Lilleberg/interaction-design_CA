@@ -1,0 +1,72 @@
+@media only screen and (max-width: 500px) {
+
+  footer .logo, .sign-up, nav {
+    display: none;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: block;
+  }
+
+  .fa-bars {
+    display: block;
+    margin: 10px 0px 5px 30px;
+  }
+
+  .navbar {
+    padding: 0px;
+  }
+
+  .navbar ul, .navbar li {
+    margin: 0px;
+  }
+
+  .navbar ul {
+    display: grid;
+    justify-content: left;
+    background-color: #eeedec;
+    padding: 5px 10px;
+    border: 2px solid;
+    border-color: #1de9b6;
+    position: absolute;
+    left: 30px;
+  }
+
+  .navbar li {
+    font-size: 0.9em;
+    padding: 10px
+  }
+
+  .search-bar {
+    width: 170px;
+    height: 30px;
+  }
+
+  .header-logo .logo {
+    max-width: 100px;
+  }
+
+  .log-in, .cart-icon, .profile-icon {
+    font-size: 0.7em;
+  }
+
+  .top-header, .footer-content {
+    margin: 0px 20px;
+  }
+
+  /*footer*/
+  .footer-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    margin: 10px 0px 10px 30px;
+  }
+
+  .contact-info a, .information h3 {
+    font-size: 1.1em;
+  }
+
+  .information div p:first-child {
+    margin-top: 7px;
+  }
+}
