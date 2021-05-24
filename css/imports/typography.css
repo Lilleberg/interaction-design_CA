@@ -8,7 +8,12 @@ a, header, footer {
   color:#040b17;
 }
 
-.button {
+h1 {
+  font-size: 1.8rem;
+  margin: 20px 0px 20px 0px;
+}
+
+.button, button {
   color: #040b17;
   text-transform: uppercase;
   font-family: "Nunito Sans", "Montserrat", sans-serif;
@@ -19,6 +24,6 @@ a, header, footer {
 }
 
 .search-bar {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-style: italic;
 }

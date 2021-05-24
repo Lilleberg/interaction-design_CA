@@ -1,11 +1,10 @@
 /*
-Colours:
-Black text: #040b17
-Background grey: #293238
-Dark blue: #11204a
-Green: #1de9b6
-Grey-ish: #dddddd
-White-ish; text: #eeedec
+  --black-text: #040b17;
+  --green: #1de9b6;
+  --white: #eeedec;
+  --dark-blue: #11204a;
+  --background-grey: #293238;
+  --light-grey: #dddddd;
 */
 
 @import "imports/typography.css";
@@ -18,19 +17,20 @@ White-ish; text: #eeedec
   display: none;
 }
 
+main {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+}
+
 .main-content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
-  text-align: center;
-  margin: 20px 100px 50px 100px;
-  row-gap: 50px;
+  gap: 100px;
 }
 
 h1 {
-  grid-column: 1/-1;
-  justify-self: start;
-  margin: 0px;
+  grid-column: 1 / -1;
 }
 
 .main-content .fas,
@@ -38,9 +38,8 @@ h1 {
   font-size: 6em;
   background-color: var(--light-grey);
   color: var(--dark-blue);
-  border: 2px solid;
-  border-color: var(--green);
-  border-radius: 6px;;
+  border: 2px solid var(--green);
+  border-radius: 6px;
   padding: 20px;
 }
 
@@ -62,14 +61,57 @@ h1 {
   margin: 15px 0px 0px 0px;
 }
 
+/*
+  -- CONTACT FORM --
+*/
+.contact-form h3 {
+  font-weight: 400;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.contact-form {
+  padding: 20px;
+  width: 500px;
+}
+
+input, option {
+  height: 1.2rem;
+}
+
+input, select, textarea {
+  border: 2px solid var(--green);
+  border-radius: 6px;
+}
+
+.contact-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 30px;
+}
+
+select {
+  font-size: 1rem;
+  padding: 2px;
+}
+
 .requirement {
-  margin-left: 20px;
+  margin-left: 10px;
+  padding-left: 10px;
   font-size: 0.8rem;
   opacity: 75%;
+  border-left: 2px solid var(--white);
+}
+
+button {
+  display: block;
+  margin: 20px auto 0px auto;
+  font-size: 1.3rem;
 }
 
 /*
-  -- MEDIUM/LARGE SCREEN
+  -- MEDIUM/LARGE SCREEN --
 */
 @media only screen and (min-width: 901px) and (max-width: 1100px) {
   .top-header, .footer-content {

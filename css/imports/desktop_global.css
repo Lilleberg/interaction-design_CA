@@ -22,7 +22,8 @@ nav {
 
 main {
   grid-area: main;
-  background: #293238
+  background: #293238;
+  padding-bottom: 20px;
 }
 
 footer {
@@ -75,7 +76,7 @@ img {
 /*
   -- BUTTONS --
 */
-.button {
+.button, button {
   background-color: var(--green);
   padding: 5px 12px;
   border: 2px solid;
@@ -130,6 +131,7 @@ img {
   display: grid;
   grid-template-columns: repeat(2, 1fr) auto;
   margin-top: 10px;
+  padding-bottom: 20px;
 }
 
 .information h3 {

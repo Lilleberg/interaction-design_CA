@@ -84,12 +84,12 @@
         </div>
       </div>
     </section>
-    <section class="form">
-      <h3>Or you can send us a message here</h3>
+    <section class="contact-form">
+      <h3>Or you can send us a message here:</h3>
 
-      <form is="contact-form">
+      <form>
         <div>
-          <label for="name">
+          <label>
             <span>Full name or username</span>
             <input type="text" name="name" id="name">
           </label>
@@ -122,10 +122,12 @@
         <div>
           <label>
             <span>Request<span class="requirement">min. 20 characters</span></span>
-            <textarea name="request" id="request"></textarea>
+            <textarea name="request" id="request" rows="10"></textarea>
           </label>
           <div class="form-error nameError">*Request must be at least 20 characters long</div>
         </div>
+
+        <button type="submit">Send</button>
       </form>
     </section>
   </main>
