@@ -1,16 +1,25 @@
-body {
+body, textarea {
   font-family: "Montserrat", "verdana", sans-serif;
   color: #eeedec;
 }
 
-a, header, footer {
+a, header, footer, textarea {
   text-decoration: none;
   color:#040b17;
 }
 
 h1 {
   font-size: 1.8rem;
-  margin: 20px 0px 20px 0px;
+  margin: 20px 0 50px 0;
+}
+
+.contact-info a, h3 {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+select, option, textarea, input {
+  font-size: 1rem;
 }
 
 .button, button {

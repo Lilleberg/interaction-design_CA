@@ -84,12 +84,13 @@
         </div>
       </div>
     </section>
+
     <section class="contact-form">
       <h3>Or you can send us a message here:</h3>
 
-      <form>
+      <form id="form">
         <div>
-          <label>
+          <label class="form-label">
             <span>Full name or username</span>
             <input type="text" name="name" id="name">
           </label>
@@ -97,7 +98,7 @@
         </div>
 
         <div>
-          <label>
+          <label class="form-label">
             <span>Email address<span class="requirement">123@example.com</span></span>
             <input type="email" name="email" id="email">
           </label>
@@ -105,7 +106,7 @@
         </div>
 
         <div>
-          <label>
+          <label class="form-label">
             <span>Subject</span>
             <select name="subject" id="subject">
               <option value="" disabled selected>Select a subject</option>
@@ -120,7 +121,7 @@
         </div>
 
         <div>
-          <label>
+          <label class="form-label">
             <span>Request<span class="requirement">min. 20 characters</span></span>
             <textarea name="request" id="request" rows="10"></textarea>
           </label>

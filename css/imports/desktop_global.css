@@ -84,6 +84,7 @@ img {
   border-radius: 5px;
   margin: 0px;
   color: var(--black-text);
+  cursor: pointer;
 }
 
 .sign-up, .log-in {
@@ -92,7 +93,7 @@ img {
   border-color: var(--dark-blue);
 }
 
-.button:hover {
+.button:hover, button:hover {
   background-color: var(--white);
   color: var(--dark-blue);
 }
@@ -136,11 +137,6 @@ img {
 
 .information h3 {
   margin: 0px;
-}
-
-.contact-info a, .information h3 {
-  font-size: 1.3em;
-  font-weight: bold;
 }
 
 .contact-info {
