@@ -108,6 +108,7 @@
           <label>
             <span>Subject</span>
             <select name="subject" id="subject">
+              <option value="" disabled selected>Select a subject</option>
               <option value="used-games">Used games</option>
               <option value="new-games">New games</option>
               <option value="account">Account</option>
@@ -120,13 +121,11 @@
 
         <div>
           <label>
-            <span>Request<span>min. 20 characters</span></span>
+            <span>Request<span class="requirement">min. 20 characters</span></span>
             <textarea name="request" id="request"></textarea>
           </label>
           <div class="form-error nameError">*Request must be at least 20 characters long</div>
         </div>
-        </div>
-
       </form>
     </section>
   </main>

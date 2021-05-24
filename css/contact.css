@@ -12,39 +12,6 @@ White-ish; text: #eeedec
 @import "imports/desktop_global.css";
 
 /*
-  -- BIG GRID --
-*/
-header {
-  grid-area: header;
-  background: #DDDDDD;
-}
-
-nav {
-  grid-area: nav;
-  background: #eeedec;
-}
-
-main {
-  grid-area: main;
-  background: #293238
-}
-
-footer {
-  grid-area: footer;
-  background: #DDDDDD;
-}
-
-body {
-  display: grid;
-  grid-template-areas:
-  'header'
-  'nav'
-  'main'
-  'footer';
-  margin: 0px;
-}
-
-/*
   -- MAIN --
 */
 .form-error {
@@ -93,6 +60,12 @@ h1 {
 
 .chat p:last-child {
   margin: 15px 0px 0px 0px;
+}
+
+.requirement {
+  margin-left: 20px;
+  font-size: 0.8rem;
+  opacity: 75%;
 }
 
 /*
