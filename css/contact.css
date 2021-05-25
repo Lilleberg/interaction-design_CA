@@ -192,4 +192,8 @@ button {
   .chat div p:last-of-type {
     margin-bottom: 0;
   }
+
+  button {
+    font-size: 1rem;
+  }
 }
