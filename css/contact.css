@@ -9,12 +9,13 @@
 
 main {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: auto;
   justify-items: center;
 }
 
 .chat, .email, .facebook {
   justify-self: center;
+  text-align: left;
 }
 
 .main-content {
@@ -124,11 +125,12 @@ button {
 /*
   -- MEDIUM SCREEN --
 */
-@media only screen and (min-width: 501px) and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
 
   .main-content {
     grid-template-columns: 1fr;
     gap: 30px;
+    margin: 0 0 20px 0;
   }
 
   .chat, .email, .facebook {
@@ -137,8 +139,12 @@ button {
     justify-content: center;
   }
 
+  .chat div p {
+    width: 100%;
+  }
+
   h1 {
-    margin: 20px;
+    margin: 20px 0 0 0;
   }
 
   .main-content .fas, .main-content .fab {
@@ -146,25 +152,10 @@ button {
   }
 
   .contact-form {
-    max-width: 80%;
-  }
-}
-
-/*
-  -- SMALL SCREEN --
-*/
-@media only screen and (max-width: 500px) {
-  .main-content {
-    grid-template-columns: 1fr;
-    row-gap: 30px;
-    margin: 20px 30px;
+    max-width: 60%;
   }
 
-  h2 {
-    margin-bottom: 10px;
-  }
-
-  .main-content .fas, .main-content .fab {
-    font-size: 4em;
+  textarea {
+    height: 100px;
   }
 }
