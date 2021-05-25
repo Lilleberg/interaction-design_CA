@@ -152,7 +152,7 @@ button {
   }
 
   .contact-form {
-    width: 60%;
+    width: 80%;
   }
 
   textarea {
@@ -174,10 +174,12 @@ button {
 
   h1 {
     margin-bottom: 20px;
+    font-size: 1.5rem;
   }
 
   h2 {
     margin: 0 0 5px 0;
+    font-size: 1.2rem;
   }
 
   .contact-form {
