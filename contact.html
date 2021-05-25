@@ -87,7 +87,7 @@
 
     <section class="contact-form">
       <h3>Or you can send us a message here:</h3>
-
+      <div class="formSuccess">You can now send the message!</div>
       <form id="form">
         <div>
           <label class="form-label">
@@ -109,7 +109,7 @@
           <label class="form-label">
             <span>Subject</span>
             <select name="subject" id="subject">
-              <option value="" disabled selected>Select a subject</option>
+              <option value="defaultValue" disabled selected>Select a subject</option>
               <option value="used-games">Used games</option>
               <option value="new-games">New games</option>
               <option value="account">Account</option>
@@ -117,7 +117,7 @@
               <option value="other">Other</option>
             </select>
           </label>
-          <div class="form-error nameError">*Please choose a subject</div>
+          <div class="form-error subjectError">*Please choose a subject</div>
         </div>
 
         <div>
@@ -125,7 +125,7 @@
             <span>Request<span class="requirement">min. 20 characters</span></span>
             <textarea name="request" id="request" rows="10"></textarea>
           </label>
-          <div class="form-error nameError">*Request must be at least 20 characters long</div>
+          <div class="form-error requestError">*Request must be at least 20 characters long</div>
         </div>
 
         <button type="submit">Send</button>
@@ -164,6 +164,8 @@
       </div>
     </section>
   </footer>
+
+  <script src="js/contact.js"></script>
 </body>
 
 </html>

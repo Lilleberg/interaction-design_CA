@@ -1,7 +1,7 @@
 @import "imports/typography.css";
 @import "imports/desktop_global.css";
 
-.form-error {
+.form-error, .formSuccess {
   display: none;
 }
 
@@ -74,11 +74,10 @@ h1 {
 
 .form-label {
   display: grid;
-  margin-bottom: 20px;
 }
 
 label span {
-  margin-bottom: 5px;
+  margin: 15px 0 5px 0;
 }
 
 input, option {
@@ -93,6 +92,7 @@ input:focus, textarea:focus, select:focus {
 input, select, textarea {
   border: 2px solid var(--white);
   border-radius: 6px;
+  margin-bottom: 0px;
 }
 
 select {
@@ -112,6 +112,20 @@ button {
   display: block;
   margin: 20px auto 0px auto;
   font-size: 1.3rem;
+}
+
+.form-error {
+  font-size: 0.8rem;
+  color: rgb(255, 175, 175);
+  margin-top: 5px;
+}
+
+.formSuccess {
+  text-align: center;
+  border: 2px solid var(--green);
+  color: var(--greed);
+  border-radius: 6px;
+  padding: 10px 0;
 }
 
 /* Medium/large screen */
