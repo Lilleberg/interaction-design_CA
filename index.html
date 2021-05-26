@@ -40,17 +40,20 @@
         <li><a>Sell games</a></li>
         <li><a>News</a></li>
       </ul>
-      <div class="search nav-search">
-        <input type="text" name="search-bar" placeholder="Search..." class="search-bar">
-        <a href="search_results.html" class="search-icon"><i class="fas fa-search fa-2x"></i></a>
-      </div>
     </nav>
-  </header>
-  <main>
-    <div class="searchy">
+    <div class="search">
       <input type="text" name="search-bar" placeholder="Search..." class="search-bar">
       <a href="search_results.html" class="search-icon"><i class="fas fa-search fa-2x"></i></a>
     </div>
+    <section class="cart-container">
+      <p>My cart:</p>
+      <div class="cart">
+        <ul class="cart-products"></ul>
+        <a href="checkout.html" class="button">Proceed to checkout</a>
+      </div>
+    </section>
+  </header>
+  <main>
     <section class="main-content">
       <div class="used-games">
         <h1>Buy used games</h1>
@@ -59,15 +62,7 @@
           <div class="sub-content">
             <a href="product.html">CoD: Black Ops</a>
             <p class="price">150,-</p>
-            <p class="button add-to-cart">add to cart</p>
-          </div>
-        </div>
-        <div class="game">
-          <a href="product.html"><img src="images/cod.jpg" alt="Call of duty: black ops" class=img-cod></a>
-          <div class="sub-content">
-            <a href="product.html">CoD: Black Ops</a>
-            <p class="price">150,-</p>
-            <p class="button add-to-cart">add to cart</p>
+            <button class="button add-to-cart" data-game="CoD: Black ops">Add to cart</button>
           </div>
         </div>
         <div class="game">
@@ -75,7 +70,7 @@
           <div class="sub-content">
             <a href="product.html">CoD: Black Ops</a>
             <p class="price">150,-</p>
-            <p class="button add-to-cart">add to cart</p>
+            <button class="button add-to-cart" data-game="CoD: Black ops">Add to cart</button>
           </div>
         </div>
         <div class="game">
@@ -83,7 +78,15 @@
           <div class="sub-content">
             <a href="product.html">CoD: Black Ops</a>
             <p class="price">150,-</p>
-            <p class="button add-to-cart">add to cart</p>
+            <button class="button add-to-cart" data-game="CoD: Black ops">Add to cart</button>
+          </div>
+        </div>
+        <div class="game">
+          <a href="product.html"><img src="images/cod.jpg" alt="Call of duty: black ops" class="img-cod"></a>
+          <div class="sub-content">
+            <a href="product.html">CoD: Black Ops</a>
+            <p class="price">150,-</p>
+            <button class="button add-to-cart" data-game="CoD: Black ops">Add to cart</button>
           </div>
         </div>
       </div>
@@ -105,7 +108,7 @@
           <div class="sub-content">
             <a href="product.html">CoD: Black Ops</a>
             <p class="price">150,-</p>
-            <p class="button add-to-cart">add to cart</p>
+            <button class="button add-to-cart" data-game="CoD: Black ops">Add to cart</button>
           </div>
         </div>
         <div class="game">
@@ -113,7 +116,7 @@
           <div class="sub-content">
             <a href="product.html">CoD: Black Ops</a>
             <p class="price">150,-</p>
-            <p class="button add-to-cart">add to cart</p>
+            <button class="button add-to-cart" data-game="CoD: Black ops">Add to cart</button>
           </div>
         </div>
         <div class="game">
@@ -121,7 +124,7 @@
           <div class="sub-content">
             <a href="product.html">CoD: Black Ops</a>
             <p class="price">150,-</p>
-            <p class="button add-to-cart">add to cart</p>
+            <button class="button add-to-cart" data-game="CoD: Black ops">Add to cart</button>
           </div>
         </div>
         <div class="game">
@@ -129,7 +132,7 @@
           <div class="sub-content">
             <a href="product.html">CoD: Black Ops</a>
             <p class="price">150,-</p>
-            <p class="button add-to-cart">add to cart</p>
+            <button class="button add-to-cart" data-game="CoD: Black ops">Add to cart</button>
           </div>
         </div>
       </div>

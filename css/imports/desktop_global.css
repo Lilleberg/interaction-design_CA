@@ -12,23 +12,23 @@
 */
 header {
   grid-area: header;
-  background: #DDDDDD;
+  background: var(--light-grey);
 }
 
 nav {
   grid-area: nav;
-  background: #eeedec;
+  background: var(--white);
 }
 
 main {
   grid-area: main;
-  background: #293238;
+  background: var(--background-grey);
   padding-bottom: 20px;
 }
 
 footer {
   grid-area: footer;
-  background: #DDDDDD;
+  background: var(--light-grey);
 }
 
 body {
