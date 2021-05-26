@@ -22,13 +22,28 @@
       <div class="header-logo">
         <a href="index.html"><img src="images/GameHub_logo.png" alt="Game Hub Logo" class="logo"></a>
       </div>
+
       <div class="header-content">
         <a href="create_account.html" class="button sign-up">Sign up</a>
         <a href="create_account.html" class="button log-in">Log in</a>
-        <a href="checkout.html" class="cart-icon"><i class="fas fa-shopping-cart fa-2x"></i></a>
+        <button class="cart-button"><i class="fas fa-shopping-cart fa-2x cart-icon"></i></button>
+
+        <section class="cart-container">
+          <p>My cart:</p>
+          <div class="cart">
+            <ul class="cart-products"></ul>
+            <a href="checkout.html" class="button">Proceed to checkout</a>
+          </div>
+        </section>
         <a href="profile.html" class="profile-icon"><i class="fas fa-user-circle fa-2x"></i></a>
       </div>
     </section>
+
+    <div class="search">
+      <input type="text" name="search-bar" placeholder="Search..." class="search-bar">
+      <a href="search_results.html" class="search-icon"><i class="fas fa-search fa-2x"></i></a>
+    </div>
+
     <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
     <input type="checkbox" id="hamburger-menu">
     <nav class="navbar">
@@ -41,17 +56,6 @@
         <li><a>News</a></li>
       </ul>
     </nav>
-    <div class="search">
-      <input type="text" name="search-bar" placeholder="Search..." class="search-bar">
-      <a href="search_results.html" class="search-icon"><i class="fas fa-search fa-2x"></i></a>
-    </div>
-    <section class="cart-container">
-      <p>My cart:</p>
-      <div class="cart">
-        <ul class="cart-products"></ul>
-        <a href="checkout.html" class="button">Proceed to checkout</a>
-      </div>
-    </section>
   </header>
   <main>
     <section class="main-content">
@@ -170,6 +174,8 @@
       </div>
     </section>
   </footer>
+
+  <script src="index.html"></script>
 </body>
 
 </html>

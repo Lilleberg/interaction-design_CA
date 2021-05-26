@@ -1,7 +1,6 @@
 @import "imports/typography.css";
 @import "imports/desktop_global.css";
 
-
 /*
   -- SEARCH BAR --
 */
@@ -11,6 +10,7 @@
   align-items: center;
   margin: 20px 0px;
 }
+
 .search-icon {
   color: var(--black-text);
   margin-left: 15px;
@@ -28,6 +28,32 @@ input:focus {
   border-radius: 40px;
   padding-left: 7px;
 }
+
+/*
+ -- CART --
+*/
+
+.cart-container p {
+  font-weight: 500;
+  
+  font-size: 1.2rem;
+  margin: 0;
+ }
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  text-align: right;
+  border: 2px solid var(--green);
+  padding: 10px 5px 20px 5px;
+}
+
+.button .checkout {
+  margin: 0;
+} 
 
 /*
   -- MAIN CONTENT --
@@ -86,6 +112,11 @@ h1, h2, .news h3 {
   color: #eeedec;
   font-size: 1.2em;
   font-weight: 500;
+ }
+
+ .add-to-cart {
+   font-size: 1rem;
+   font-weight: 600;
  }
 
 /*

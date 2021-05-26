@@ -11,7 +11,7 @@ a {
   text-decoration: none;
 }
 
-.button, button {
+.button {
   font-family: "Nunito Sans", "Montserrat", sans-serif;
   text-transform: uppercase;
 }
