@@ -7,23 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/96bb08a331.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,400&family=Nunito+Sans:wght@300;400;600&display=swap"
     rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
   <link href="css/index.css" rel="stylesheet">
   <link href="css/imports/small_screen_media.css" rel="stylesheet">
   <link href="css/imports/med_screen_media.css" rel="stylesheet">
-  <!-- Hotjar Tracking Code for https://maria-holm-gamehub-feu.netlify.app/index.html -->
-  <script>
-    (function (h, o, t, j, a, r) {
-      h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
-      h._hjSettings = { hjid: 2387864, hjsv: 6 };
-      a = o.getElementsByTagName('head')[0];
-      r = o.createElement('script'); r.async = 1;
-      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
-      a.appendChild(r);
-    })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
-  </script>
   <title>Game Hub | Home</title>
 </head>
 
@@ -51,56 +40,28 @@
         <li><a>Sell games</a></li>
         <li><a>News</a></li>
       </ul>
+      <div class="search nav-search">
+        <input type="text" name="search-bar" placeholder="Search..." class="search-bar">
+        <a href="search_results.html" class="search-icon"><i class="fas fa-search fa-2x"></i></a>
+      </div>
     </nav>
   </header>
   <main>
-    <div class="search">
-      <input type="text" name="search-bar" placeholder="Search" class="search-bar">
+    <div class="searchy">
+      <input type="text" name="search-bar" placeholder="Search..." class="search-bar">
       <a href="search_results.html" class="search-icon"><i class="fas fa-search fa-2x"></i></a>
     </div>
     <section class="main-content">
-      <div class="new-releases">
-        <h1>New releases</h1>
-        <div class="game">
-          <img src="images/bf4.jpg" alt="Battlefield 4">
-          <div class="sub-content">
-            <h3>Battlefield 4</h3>
-            <p class="price">399,-</p>
-            <p class="button add-to-cart">add to cart</p>
-          </div>
-        </div>
-        <div class="game">
-          <img src="images/resident_evil_4.jpg" alt="Resident evil 4">
-          <div class="sub-content">
-            <h3>Resident Evil 4</h3>
-            <p class="price">349,-</p>
-            <p class="button add-to-cart"> add to cart</p>
-          </div>
-        </div>
-        <div class="game">
-          <img src="images/minecraft.jpg" alt="Minecraft">
-          <div class="sub-content">
-            <h3>Minecraft</h3>
-            <p class="price">149,-</p>
-            <p class="button add-to-cart">add to cart</p>
-          </div>
-        </div>
-        <div class="game">
-          <img src="images/gta5.jpg" alt="Grand theft auto 5">
-          <div class="sub-content">
-            <h3>GTA V</h3>
-            <p class="price">449,-</p>
-            <p class="button add-to-cart">add to cart</p>
-          </div>
-        </div>
-      </div>
-      <div class="news">
-        <h2>News</h2>
-        <img src="images/minecraft_news.jpg" alt="Minecraft new patch">
-        <img src="images/ps4_controller.jpg" alt="Article the best console">
-      </div>
       <div class="used-games">
         <h1>Buy used games</h1>
+        <div class="game">
+          <a href="product.html"><img src="images/cod.jpg" alt="Call of duty: black ops" class="img-cod"></a>
+          <div class="sub-content">
+            <a href="product.html">CoD: Black Ops</a>
+            <p class="price">150,-</p>
+            <p class="button add-to-cart">add to cart</p>
+          </div>
+        </div>
         <div class="game">
           <a href="product.html"><img src="images/cod.jpg" alt="Call of duty: black ops" class=img-cod></a>
           <div class="sub-content">
@@ -110,26 +71,64 @@
           </div>
         </div>
         <div class="game">
-          <img src="images/justdance.jpg" alt="Just dance">
+          <a href="product.html"><img src="images/cod.jpg" alt="Call of duty: black ops" class="img-cod"></a>
           <div class="sub-content">
-            <h3>Just Dance</h3>
-            <p class="price">70,-</p>
+            <a href="product.html">CoD: Black Ops</a>
+            <p class="price">150,-</p>
             <p class="button add-to-cart">add to cart</p>
           </div>
         </div>
         <div class="game">
-          <img src="images/lbp2.jpg" alt="Little big planet 2">
+          <a href="product.html"><img src="images/cod.jpg" alt="Call of duty: black ops" class="img-cod"></a>
           <div class="sub-content">
-            <h3>LBP 2</h3>
-            <p class="price">130,-</p>
+            <a href="product.html">CoD: Black Ops</a>
+            <p class="price">150,-</p>
+            <p class="button add-to-cart">add to cart</p>
+          </div>
+        </div>
+      </div>
+      <div class="news">
+        <h3>News</h3>
+        <div>
+          <img src="images/minecraft_news.jpg" alt="Minecraft new patch">
+          <p>All you need to know about the new patch!</p>
+        </div>
+        <div>
+          <img src="images/ps4_controller.jpg" alt="Article the best console">
+          <p>You won't believe what's been voted the best console!</p>
+        </div>
+      </div>
+      <div class="new-releases">
+        <h2>Buy used games</h2>
+        <div class="game">
+          <a href="product.html"><img src="images/cod.jpg" alt="Call of duty: black ops" class="img-cod"></a>
+          <div class="sub-content">
+            <a href="product.html">CoD: Black Ops</a>
+            <p class="price">150,-</p>
             <p class="button add-to-cart">add to cart</p>
           </div>
         </div>
         <div class="game">
-          <img src="images/fifa14.jpg" alt="FIFA 14">
+          <a href="product.html"><img src="images/cod.jpg" alt="Call of duty: black ops" class="img-cod"></a>
           <div class="sub-content">
-            <h3>FIFA 14</h3>
-            <p class="price">50,-</p>
+            <a href="product.html">CoD: Black Ops</a>
+            <p class="price">150,-</p>
+            <p class="button add-to-cart">add to cart</p>
+          </div>
+        </div>
+        <div class="game">
+          <a href="product.html"><img src="images/cod.jpg" alt="Call of duty: black ops" class="img-cod"></a>
+          <div class="sub-content">
+            <a href="product.html">CoD: Black Ops</a>
+            <p class="price">150,-</p>
+            <p class="button add-to-cart">add to cart</p>
+          </div>
+        </div>
+        <div class="game">
+          <a href="product.html"><img src="images/cod.jpg" alt="Call of duty: black ops" class="img-cod"></a>
+          <div class="sub-content">
+            <a href="product.html">CoD: Black Ops</a>
+            <p class="price">150,-</p>
             <p class="button add-to-cart">add to cart</p>
           </div>
         </div>

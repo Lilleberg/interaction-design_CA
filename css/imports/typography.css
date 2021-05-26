@@ -1,31 +1,32 @@
-body, textarea {
+body, textarea, a {
   font-family: "Montserrat", "verdana", sans-serif;
   color: #eeedec;
 }
 
-a, header, footer, textarea {
-  text-decoration: none;
+a, header, footer, textarea, .button, button {
   color:#040b17;
 }
 
-h1 {
-  font-size: 1.8rem;
-  margin: 20px 0 50px 0;
+a {
+  text-decoration: none;
 }
 
-.contact-info a, h3 {
+.button, button {
+  font-family: "Nunito Sans", "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+h1, .new-releases h2, .news h3 {
+  font-size: 1.8rem;
+}
+
+.contact-info a, footer h3 {
   font-size: 1.3em;
   font-weight: bold;
 }
 
 select, option, textarea, input {
   font-size: 1rem;
-}
-
-.button, button {
-  color: #040b17;
-  text-transform: uppercase;
-  font-family: "Nunito Sans", "Montserrat", sans-serif;
 }
 
 .active {

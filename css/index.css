@@ -1,85 +1,49 @@
-/*
-Colours:
-Black text: #040b17
-Background grey: #293238
-Dark blue: #11204a
-Green: #1de9b6
-Grey-ish: #DDDDDD
-White-ish; text: #eeedec
-*/
-
 @import "imports/typography.css";
 @import "imports/desktop_global.css";
 
-/*
-  -- BIG GRID --
-*/
-header {
-  grid-area: header;
-  background: #DDDDDD;
-}
-
-nav {
-  grid-area: nav;
-  background: #eeedec;
-}
-
-main {
-  grid-area: main;
-  background: #293238
-}
-
-footer {
-  grid-area: footer;
-  background: #DDDDDD;
-}
-
-body {
-  display: grid;
-  grid-template-areas:
-  'header'
-  'nav'
-  'main'
-  'footer';
-  margin: 0px;
-}
 
 /*
   -- SEARCH BAR --
 */
+
 .search {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30px 0px;
+  margin: 20px 0px;
+}
+.search-icon {
+  color: var(--black-text);
+  margin-left: 15px;
 }
 
-.search-icon {
-  color: #eeedec;
-  margin-left: 15px;
+input:focus {
+  outline: none;
+  font-style: normal;
 }
 
 .search-bar {
   width: 300px;
-  height: 35px;
-  border: none;
+  height: 2rem;
+  border: 2px solid var(--black-text);
   border-radius: 40px;
-  padding-left: 5px;
+  padding-left: 7px;
 }
 
-textarea:focus, input:focus{
-  outline: none;
+.searchy {
+  display: none;
 }
+
 
 /*
   -- MAIN CONTENT --
 */
 .main-content {
   display: grid;
-  grid-template-columns: 1fr 0.8fr 1fr;
+  grid-template-columns: 1fr 0.7fr 1fr;
   justify-items: center;
   gap: 70px;
-  margin: 50px;
+  margin-top: 20px;
 }
 
 .new-releases, .used-games {
@@ -99,7 +63,12 @@ textarea:focus, input:focus{
   text-align: center;
 }
 
-h1, h2 {
+.news p {
+  font-size: 1.2rem;
+  margin: 5px 0 10px 0;
+}
+
+h1, h2, .news h3 {
   grid-column: 1 / -1;
   margin: 0px;
   border-bottom: 3px solid;
@@ -114,8 +83,9 @@ h1, h2 {
   display: inline-block;
 }
 
-.sub-content p, h3 {
-  margin: 5px 0px;
+.sub-content p {
+  margin: 10px 0;
+  font-weight: 400;
 }
 
 .sub-content {
@@ -125,6 +95,7 @@ h1, h2 {
 .sub-content a {
   color: #eeedec;
   font-size: 1.2em;
+  font-weight: 500;
  }
 
  .add-to-cart {
