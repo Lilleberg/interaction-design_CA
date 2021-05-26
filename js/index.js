@@ -1,6 +1,11 @@
-const cartButton = document.querySelector(".cart-button");
+const cartButton = document.querySelector(".cart-icon");
 const cartContainer = document.querySelector(".cart-container");
 
 cartButton.onclick = function () {
-  cartContainer.style.display = "block";
+  if (cartContainer.style.display === "block") {
+    cartContainer.style.display = "none";
+  } else {
+    cartContainer.style.display = "block";
+  }
 }
+

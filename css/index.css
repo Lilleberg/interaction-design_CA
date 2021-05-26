@@ -29,6 +29,11 @@ input:focus {
   padding-left: 7px;
 }
 
+.add-to-cart {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
 /*
  -- CART --
 */
@@ -41,19 +46,24 @@ input:focus {
  }
 
 .cart-container {
+  position: absolute;
+  top: 80px;
+  right: 40px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  position: absolute;
-  right: 20px;
-  text-align: right;
+  text-align: center;
   border: 2px solid var(--green);
   padding: 10px 5px 20px 5px;
+  background-color: var(--white);
 }
 
-.button .checkout {
-  margin: 0;
-} 
+.checkout {
+  margin: 20px 0 0 0;
+}
+
+.game-product {
+  margin: 10px 0 20px 0;
+}
 
 /*
   -- MAIN CONTENT --
@@ -112,11 +122,6 @@ h1, h2, .news h3 {
   color: #eeedec;
   font-size: 1.2em;
   font-weight: 500;
- }
-
- .add-to-cart {
-   font-size: 1rem;
-   font-weight: 600;
  }
 
 /*

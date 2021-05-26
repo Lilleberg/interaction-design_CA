@@ -53,11 +53,7 @@ img {
   grid-template-columns: 1fr auto;
   margin: 10px;
   gap: 10px;
-  align-items: center;
-}
-
-.header-content a :not(.checkout) {
-  margin-left: 15px;
+  align-items: center
 }
 
 .logo {
@@ -67,6 +63,7 @@ img {
 
 .cart-icon, .profile-icon {
   color: var(--dark-blue);
+  cursor: pointer;
 }
 
 .top-header, .main-content, .footer-content {
@@ -102,6 +99,10 @@ img {
   background-color: var(--white);
   color: var(--dark-blue);
   border: 2px solid;
+}
+
+.log-in, .cart-icon, .profile-icon {
+  margin-left: 15px;
 }
 
 /*
