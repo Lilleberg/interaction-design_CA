@@ -40,7 +40,6 @@ input:focus {
 
 .cart-container p {
   font-weight: 500;
-  
   font-size: 1.2rem;
   margin: 0;
  }
@@ -55,6 +54,7 @@ input:focus {
   border: 2px solid var(--green);
   padding: 10px 5px 20px 5px;
   background-color: var(--white);
+  display: none;
 }
 
 .checkout {
