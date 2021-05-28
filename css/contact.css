@@ -107,9 +107,9 @@ select {
   border-left: 2px solid var(--white);
 }
 
-button {
+.submit {
   display: block;
-  margin: 20px auto 0px auto;
+  margin: 10px auto 0px auto;
   font-size: 1.3rem;
 }
 

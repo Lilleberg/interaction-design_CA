@@ -15,7 +15,7 @@ cartIcon.onclick = function () {
 }
 
 addToCartButton.forEach(function (button) {
-  button.addEventListener("click", function (event) {
+  button.onclick = function (event) {
 
     cartContainer.style.display = "block";
 
@@ -52,5 +52,8 @@ addToCartButton.forEach(function (button) {
        <div>`;
       totalSum.innerHTML = `<p class="total-price">Sum:</p><p>${total},-</p>`;
     }
-  });
+
+    localStorage.setItem("cart", JSON.stringify(gameArr));
+
+  }
 });

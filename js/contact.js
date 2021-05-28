@@ -70,6 +70,23 @@ request.addEventListener("focus", (event) => {
   }
 });
 
+subject.addEventListener("blur", (event) => {
+  if (subject.value !== "defaultValue") {
+    subjectError.style.display = "none";
+  } else {
+    subjectError.style.display = "block";
+  }
+});
+
+subject.addEventListener("focus", (event) => {
+  if (subject) {
+    subjectError.style.display = "none";
+  } else {
+    subjectError.style.display = "block";
+  }
+});
+
+
 function submitForm(event) {
   event.preventDefault();
 
@@ -98,8 +115,6 @@ function submitForm(event) {
   } else {
     requestError.style.display = "block";
   }
-
-  formSuccess.innerHTML = "You message has been sent!";
 }
 
 form.addEventListener("submit", submitForm);
