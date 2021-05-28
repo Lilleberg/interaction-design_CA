@@ -21,7 +21,7 @@ addToCartButton.forEach(function (button) {
 
     setTimeout(function () {
       cartContainer.style.display = "none";
-    }, 3000);
+    }, 5000);
 
     const gameName = event.target.dataset.game;
     const gameCost = event.target.dataset.cost;

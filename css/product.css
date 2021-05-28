@@ -35,17 +35,6 @@ h2, h3 {
   font-size: 1.3em;
 }
 
-.next-img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5px;
-}
-
-.next-img p {
-  margin: 0px 5px 0px 0px;
-}
-
 .page-title p {
   margin: 5px 0px 10px 0px;
   opacity: 70%;
