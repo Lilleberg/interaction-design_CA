@@ -1,12 +1,12 @@
-const cartButton = document.querySelector(".cart-icon");
+const cartIcon = document.querySelector(".cart-icon");
 const cartContainer = document.querySelector(".cart-container");
-const addToCart = document.querySelectorAll(".add-to-cart");
-const cartItems = document.querySelector(".cart");
+const addToCartButton = document.querySelectorAll(".add-to-cart");
+const cart = document.querySelector(".cart");
 
-let games = [];
-let gameObject = {};
+let singleGameObj = {};
+let gameArr = [];
 
-cartButton.onclick = function () {
+cartIcon.onclick = function () {
   if (cartContainer.style.display === "block") {
     cartContainer.style.display = "none";
   } else {
@@ -14,41 +14,67 @@ cartButton.onclick = function () {
   }
 }
 
-addToCart.forEach(function (button) {
-  button.addEventListener("click", function () {
+addToCartButton.forEach(function (button) {
+  button.addEventListener("click", function (event) {
 
-    if (!games.length === 0) {
-      document.querySelector(".empty").style.display = "none";
-    } else {
-      document.querySelector(".empty").style.display = "block";
-    }
     cartContainer.style.display = "block";
 
+    const gameName = event.target.dataset.game;
+    const gameCost = event.target.dataset.cost;
+    const price = parseInt(gameCost);
 
-    const price = event.target.dataset.price;
-    console.log(price);
-    let gameAdded = event.target.dataset.game;
-    games.push(gameAdded);
-    games.push(price);
-    console.log(games);
-    for (let i = 0; i < games.length; i++) {
-      cartItems.innerHTML += `${games[i]}`;
+    /*gameArr = [
+      {
+        name: gameName,
+        price: gameCost,
+      }
+    ];*/
+
+    singleGameObj = {
+      name: gameName,
+      price: gameCost,
+    };
+
+    gameArr.push(singleGameObj);
+    console.log(gameArr);
+
+    cart.innerHTML = "";
+    let total = 0;
+    const totalSum = document.querySelector(".total-sum");
+
+    for (let i = 0; i < gameArr.length; i++) {
+
+      total = total + JSON.stringify(gameArr[i].price);
+      console.log(total);
+
+      cart.innerHTML +=
+        `<div class="cart-item">
+        <div><img src="../images/cod.jpg" alt="CoD: Black Ops product image" style="max-width: 80px";></div>
+        <div class="cart-name-price">
+          <p class="game-in-cart-name">${gameArr[i].name}</p>
+          <p class="game-in-cart-price">${gameArr[i].price},-
+        </div>
+      <div>`;
+      totalSum.innerHTML = `<p class="total-price">Sum:</p><p>${total},-</p>`;
+
     }
 
   })
 });
-/*for (let i = 0; i < games.length; i++) {
-  cartContainer.style.display = "block";
-  document.querySelector(".empty").style.display = "none";
-  console.log(gameAdded);
-  addGameList.innerHTML += `${gameAdded}`;
-}
-}*/
 
-/*gameProducts.forEach(function (product) {
-  product.addEventListener("click", function () {
-    cartContainer.style.display = "block";
-    let gameAdded = event.target.dataset.game;
-    addGameList.innerHTML += `<li>${gameAdded}</li>`;
-  })
-});*/
+/*function showCart(cartItems) {
+
+
+  cartItems.forEach(function () {
+    total += price;
+    cart.innerHTML +=
+      `<div class="cart-item">
+        <div><img src="../images/cod.jpg" alt="CoD: Black Ops product image" style="max-width: 80px";></div>
+        <div class="cart-name-price">
+          <p class="game-in-cart-name">${gameName}</p>
+          <p class="game-in-cart-price">${price},-
+        </div>
+      <div>`;
+    totalSum.innerHTML = `<p class="total-price">Sum:</p><p>${total},-</p>`;
+  });
+};*/

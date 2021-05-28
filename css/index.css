@@ -38,31 +38,70 @@ input:focus {
  -- CART --
 */
 
-.cart-container p {
+.cart-heading {
   font-weight: 500;
   font-size: 1.2rem;
-  margin: 0;
+  margin: 0 0 20px 0;
  }
 
 .cart-container {
   position: absolute;
   top: 80px;
-  right: 40px;
+  right: 10px;
   display: flex;
   flex-direction: column;
   text-align: center;
   border: 2px solid var(--green);
-  padding: 10px 5px 20px 5px;
+  padding: 10px 10px 20px 10px;
   background-color: var(--white);
   display: none;
 }
 
-.checkout {
-  margin: 20px 0 0 0;
+.cart-item {
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 10px;
+  align-items: center;
+  justify-items: start;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: var(--light-grey);
 }
 
-.game-product {
-  margin: 10px 0 20px 0;
+.cart img {
+  border-radius: 10%;
+}
+
+.cart-name-price {
+  text-align: left;
+}
+
+.cart-name-price * {
+  margin: 0px;
+}
+
+.game-in-cart-name {
+  margin-bottom: 10px;
+}
+
+.total-sum {
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-between;
+}
+
+.total-sum p {
+  font-size: 1rem;
+}
+
+.total-price, .game-in-cart-name {
+  font-weight: 500;
+}
+
+.total-sum p:last-of-type{
+  font-weight: 400;
 }
 
 /*
@@ -140,7 +179,7 @@ h1, h2, .news h3 {
 
   .new-releases, .used-games {
     grid-template: 1fr / repeat(4, 1fr);
-    gap: 15px;
+    gap: 50px;
   }
 
   .news {
@@ -194,18 +233,11 @@ h1, h2, .news h3 {
 
   .main-content {
     grid-template: 3fr / 1fr;
-    row-gap: 10px;
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-
-  .new-releases, .used-games {
-    grid-template: auto repeat(2, 1fr) / 1fr;
+    gap: 20px;
+    margin: 0 10px;
   }
 
   .news {
     display: none;
   }
-
-  
 }
