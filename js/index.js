@@ -19,16 +19,13 @@ addToCartButton.forEach(function (button) {
 
     cartContainer.style.display = "block";
 
+    setTimeout(function () {
+      cartContainer.style.display = "none";
+    }, 3000);
+
     const gameName = event.target.dataset.game;
     const gameCost = event.target.dataset.cost;
-    const price = parseInt(gameCost);
-
-    /*gameArr = [
-      {
-        name: gameName,
-        price: gameCost,
-      }
-    ];*/
+    const gameImg = event.target.dataset.img;
 
     singleGameObj = {
       name: gameName,
@@ -38,25 +35,24 @@ addToCartButton.forEach(function (button) {
     gameArr.push(singleGameObj);
     console.log(gameArr);
 
-    cart.innerHTML = "";
     let total = 0;
+    cart.innerHTML = "";
     const totalSum = document.querySelector(".total-sum");
 
     for (let i = 0; i < gameArr.length; i++) {
 
-      total = total + JSON.stringify(gameArr[i].price);
-      console.log(total);
+      let price = parseInt(gameArr[i].price);
+      total += price;
 
       cart.innerHTML +=
         `<div class="cart-item">
-        <div><img src="../images/cod.jpg" alt="CoD: Black Ops product image" style="max-width: 80px";></div>
-        <div class="cart-name-price">
-          <p class="game-in-cart-name">${gameArr[i].name}</p>
-          <p class="game-in-cart-price">${gameArr[i].price},-
-        </div>
-      <div>`;
+         <div><img src="../images/cod.jpg" alt="CoD: Black Ops product image" style="max-width: 80px";></div>
+         <div class="cart-name-price">
+           <p class="game-in-cart-name">${gameArr[i].name}</p>
+           <p class="game-in-cart-price">${gameArr[i].price},-
+         </div>
+       <div>`;
       totalSum.innerHTML = `<p class="total-price">Sum:</p><p>${total},-</p>`;
-
     }
 
   })
