@@ -12,39 +12,6 @@ White-ish; text: #eeedec
 @import "imports/desktop_global.css";
 
 /*
-  -- BIG GRID --
-*/
-header {
-  grid-area: header;
-  background: var(--light-grey);
-}
-
-nav {
-  grid-area: nav;
-  background: var(--white);
-}
-
-main {
-  grid-area: main;
-  background: var(--background-grey);
-}
-
-footer {
-  grid-area: footer;
-  background: var(--light-grey);
-}
-
-body {
-  display: grid;
-  grid-template-areas:
-  'header'
-  'nav'
-  'main'
-  'footer';
-  margin: 0px;
-}
-
-/*
   -- MAIN --
 */
 .main-content h1, .main-content h2,
