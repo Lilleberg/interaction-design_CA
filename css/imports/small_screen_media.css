@@ -46,7 +46,7 @@
     max-width: 100px;
   }
 
-  .log-in, .cart-icon, .profile-icon {
+  .log-in, .profile-icon, #cart-icon {
     font-size: 0.7em;
   }
 

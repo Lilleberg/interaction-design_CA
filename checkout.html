@@ -22,18 +22,34 @@
       <div class="header-logo">
         <a href="index.html"><img src="images/GameHub_logo.png" alt="Game Hub Logo" class="logo"></a>
       </div>
+
       <div class="header-content">
         <a href="create_account.html" class="button sign-up">Sign up</a>
         <a href="create_account.html" class="button log-in">Log in</a>
-        <a href="checkout.html" class="cart-icon"><i class="fas fa-shopping-cart fa-2x"></i></a>
+        <a href="#" id="cart-icon"><i class="fas fa-shopping-cart fa-2x"></i></a>
+
+        <section class="cart-container">
+          <p class="cart-heading">My cart:</p>
+          <div class="cart">
+          </div>
+          <div class="total-sum"></div>
+          <div><a href="checkout.html" class="button checkout">Proceed to checkout</a></div>
+        </section>
+
         <a href="profile.html" class="profile-icon"><i class="fas fa-user-circle fa-2x"></i></a>
       </div>
     </section>
+
+    <div class="search">
+      <input type="text" name="search-bar" placeholder="Search..." class="search-bar">
+      <a href="search_results.html" class="search-icon"><i class="fas fa-search fa-2x"></i></a>
+    </div>
+
     <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
     <input type="checkbox" id="hamburger-menu">
     <nav class="navbar">
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="index.html">Home</a></li>
         <li><a>All products</a></li>
         <li><a>Used games</a></li>
         <li><a>New Games</a></li>
@@ -42,6 +58,7 @@
       </ul>
     </nav>
   </header>
+
   <main>
     <section class="main-content">
       <div class="main-left">
