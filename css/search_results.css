@@ -101,7 +101,7 @@ h1 {
   }
 }
 
-@media only screen and (min-width: 501px) and (max-width: 900px) {
+@media only screen and (max-width: 900px) {
 
   h1 {
     max-width: 70%;
@@ -168,10 +168,6 @@ h1 {
     padding: 5px 10px;
   }
 
-  #filters-box:checked ~ .filters, .filter-label {
-    display: block;
-  }
-
   .filter-label {
     border: 2px solid;
     border-color: #1de9b6;
@@ -191,9 +187,13 @@ h1 {
   }
 
   /*main*/
+  .main-content {
+    margin: 0 10px;
+  }
+
   .products {
-    grid-template-columns: 1fr;
-    margin: 20px 40px;
-    row-gap: 2em;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 0;
+    gap: 1.5rem;
   }
 }
