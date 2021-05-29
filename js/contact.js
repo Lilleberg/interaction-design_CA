@@ -8,12 +8,20 @@ const subjectError = document.querySelector(".subjectError");
 const request = document.querySelector("#request");
 const requestError = document.querySelector(".requestError");
 const formSuccess = document.querySelector(".formSuccess");
+const submit = document.querySelector(".submit");
+
+submit.style.filter = "grayscale(100%)";
 
 function checkAllInput() {
   if (checkLength(fullName.value, 0) && checkEmail(email.value) && subject.value !== "defaultValue" && checkLength(request.value, 19)) {
     formSuccess.style.display = "block";
+    submit.disabled = false;
+    submit.style.filter = "grayscale(0%)";
+
   } else {
     formSuccess.style.display = "none";
+    submit.disabled = true;
+    submit.style.filter = "grayscale(100%)";
   }
 }
 
@@ -86,35 +94,17 @@ subject.addEventListener("focus", (event) => {
   }
 });
 
-
 function submitForm(event) {
   event.preventDefault();
-
   formSuccess.innerHTML = "You can now send the message!";
 
-  if (checkLength(fullName.value, 0)) {
-    nameError.style.display = "none";
-  } else {
-    nameError.style.display = "block";
-  }
+  formSuccess.innerHTML = "Your message has been sent!";
 
-  if (checkEmail(email.value)) {
-    emailError.style.display = "none";
-  } else {
-    emailError.style.display = "block";
-  }
+  setTimeout(() => {
+    formSuccess.style.display = "none";
+  }, 2000);
 
-  if (subject.value !== "defaultValue") {
-    subjectError.style.display = "none";
-  } else {
-    subjectError.style.display = "block";
-  }
-
-  if (checkLength(request.value, 19)) {
-    requestError.style.display = "none";
-  } else {
-    requestError.style.display = "block";
-  }
+  form.reset();
 }
 
 form.addEventListener("submit", submitForm);
