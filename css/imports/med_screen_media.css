@@ -5,41 +5,41 @@
     display: none;
   }
 
-  nav {
-    padding: 0px;
-  }
-
   #hamburger-menu:checked ~ nav {
     display: block;
-  }
-
-  .navbar {
-    padding: 0px;
   }
 
   .navbar ul, .navbar li {
     margin: 0px;
   }
 
+  .navbar, .navbar ul {
+    padding: 0;
+  }
+
   .navbar ul {
     display: grid;
-    justify-content: left;
+    text-align: center;
     background-color: #eeedec;
-    padding: 5px 20px;
     border: 2px solid;
     border-color: #1de9b6;
     position: absolute;
-    left: 40px;
   }
 
   .navbar li {
     font-size: 1em;
-    padding: 5px;
+    padding: 10px;
+    width: 200px;
+  }
+
+  .navbar li:nth-child(2n) {
+    background-color: var(--light-grey);
   }
 
   .fa-bars {
     display: block;
     margin: 5px 0px 5px 40px;
+    font-size: 1.5rem;
   }
 
   .log-in, #cart-icon, .profile-icon {
@@ -61,5 +61,17 @@
 
   .information {
     justify-self: center;
+  }
+
+  /*search*/
+
+  .search-bar {
+    width: 150px;
+    height: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .fa-search {
+    font-size: 1.5rem;
   }
 }

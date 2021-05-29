@@ -1,6 +1,7 @@
 const cartItems = JSON.parse(localStorage.getItem("cart"));
 const gameInfo = document.querySelector(".info");
 const costInfo = document.querySelector(".cost-info");
+const continueShop = document.querySelector(".cont");
 
 let sumItems = 0;
 
@@ -35,3 +36,7 @@ costInfo.innerHTML +=
     <p>Total</p>
     <p>${sumTotal},-</p>
   </div>`;
+
+continueShop.onclick = function () {
+  localStorage.clear();
+}

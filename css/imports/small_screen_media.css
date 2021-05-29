@@ -13,28 +13,39 @@
     margin: 10px 0px 5px 30px;
   }
 
-  .navbar {
-    padding: 0px;
+  footer .logo-copyright, .sign-up, nav, .filters_line {
+    display: none;
+  }
+
+  #hamburger-menu:checked ~ nav {
+    display: block;
   }
 
   .navbar ul, .navbar li {
     margin: 0px;
   }
 
+  .navbar, .navbar ul {
+    padding: 0;
+  }
+
   .navbar ul {
     display: grid;
-    justify-content: left;
+    text-align: center;
     background-color: #eeedec;
-    padding: 5px 10px;
     border: 2px solid;
     border-color: #1de9b6;
     position: absolute;
-    left: 30px;
   }
 
   .navbar li {
-    font-size: 0.9em;
-    padding: 10px
+    font-size: 1em;
+    padding: 10px;
+    width: 200px;
+  }
+
+  .navbar li:nth-child(2n) {
+    background-color: var(--light-grey);
   }
 
   .search-bar {
@@ -76,5 +87,17 @@
 
   .information div p:first-child {
     margin-top: 7px;
+  }
+
+  /*search*/
+
+  .search-bar {
+    width: 150px;
+    height: 1.5rem;
+    font-size: 1rem;
+  }
+
+  .fa-search {
+    font-size: 1.5rem;
   }
 }

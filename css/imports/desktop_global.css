@@ -81,6 +81,7 @@ img {
  }
 
 .cart-container {
+  z-index: 1;
   position: absolute;
   top: 80px;
   right: 40px;

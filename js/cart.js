@@ -44,16 +44,15 @@ addToCartButton.forEach(function (button) {
 
       cart.innerHTML +=
         `<div class="cart-item">
-         <div><img src="../images/cod.jpg" alt="CoD: Black Ops product image" style="max-width: 80px";></div>
-         <div class="cart-name-price">
-           <p class="game-in-cart-name">${gameArr[i].name}</p>
-           <p class="game-in-cart-price">${gameArr[i].price},-
-         </div>
-       <div>`;
+        <div><img src="../images/cod.jpg" alt="CoD: Black Ops product image" style="max-width: 80px";></div>
+          <div class="cart-name-price">
+             <p class="game-in-cart-name">${gameArr[i].name}</p>
+             <p class="game-in-cart-price">${gameArr[i].price},-
+          </div>
+       </div>`;
       totalSum.innerHTML = `<p class="total-price">Sum:</p><p>${total},-</p>`;
     }
 
     localStorage.setItem("cart", JSON.stringify(gameArr));
-
   }
 });
