@@ -56,3 +56,8 @@ addToCartButton.forEach(function (button) {
     localStorage.setItem("cart", JSON.stringify(gameArr));
   }
 });
+
+if (gameArr.length === 0) {
+  cart.innerHTML = "Your cart is empty";
+  cart.style.fontStyle = "italic";
+}

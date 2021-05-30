@@ -4,6 +4,13 @@ const totalSum = document.querySelector(".payment-total");
 
 let priceItems = 0;
 
+if (!cartItems) {
+  itemsContainer.innerHTML = "Your cart is empty";
+  itemsContainer.style.marginTop = "20px";
+  itemsContainer.style.fontStyle = "italic";
+  totalSum.style.display = "none";
+}
+
 cartItems.forEach(function (cartElement) {
 
   priceItems += parseInt(cartElement.price);
